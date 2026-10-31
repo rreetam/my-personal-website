@@ -26,4 +26,5 @@ The contact section uses Supabase's JS SDK loaded via CDN. Submissions push dire
 ## Support and Connect
 - Live site: reett.neocities.org
 - Neocities profile: <a href="[https://github.com](https://neocities.org/site/reett)" target="_blank">bloodlluxe</a>
+
 Thank you for stopping by. Have fun!
