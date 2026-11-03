@@ -20,7 +20,7 @@ This is an ongoing experiment for rediscovering personal expression on the Inter
 I used AI mostly to verify my codes and also let it help me in certain parts of the code that didnt print/have any output. In some cases I used it to provide me with ideas when I was out of them so I could make the website better
 
 ## Support and Connect
-- Live site: reett.neocities.org
+- Live site: https://reett.neocities.org
 - Neocities profile: <a href="[https://github.com](https://neocities.org/site/reett)" target="_blank">bloodlluxe</a>
 
 Thank you for stopping by. Have fun!
