@@ -4,24 +4,20 @@ This is an ongoing experiment for rediscovering personal expression on the Inter
 
 ## Built with
 - Markup & Styling: Vanilla HTML5 & CSS3 (clean, zero bulky front-end frameworks).
-- Backend & Database: Supabase (PostgreSQL) with Row-Level Security (RLS) to keep visitor messages private.
 - Hosting: Neocities (Static site hosting).
 
 ## Project Structure
-├── index.html       # Main landing page & layout
+├── index.html       # "enter the website" page
 
-├── style.css        # Custom styles, responsive tweaks & themes
+├── home.html        # main website
 
-├── banner7.jpg      # Header illustration / banner art
+├── style.css        # custom styles, responsive tweaks & themes
 
-└── README.md        # You are here!
+├── banner7.jpg      # header illustration / banner art
 
-## How the Message Box works
-The contact section uses Supabase's JS SDK loaded via CDN. Submissions push directly to an anon-insertable messages table protected by PostgreSQL Row Level Security:
+└── README.md        # you are here!
 
-- Anyone visiting the site can write to the table.
-
-- Only I can read the submissions via the authenticated Supabase admin dashboard, keeping everyone's messages safe and spam-free
+I used AI mostly to verify my codes and also let it help me in certain parts of the code that didnt print/have any output. In some cases I used it to provide me with ideas when I was out of them so I could make the website better
 
 ## Support and Connect
 - Live site: reett.neocities.org
