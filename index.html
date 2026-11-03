@@ -1,244 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>bloodlluxe - Official Site</title>
-    <link rel="stylesheet" href="style.css?v=11">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <title>welcome to reet.org</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background-color: #0b0b12;
+        background-image: url("https://files.catbox.moe/3c1025.gif");
+        background-repeat: repeat;
+        background-attachment: fixed;
+        color: #d1d1d6;
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .splash-card {
+        background: #25242c;
+        border: 6px solid #484650;
+        border-radius: 14px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+        padding: 28px 24px;
+        text-align: center;
+        max-width: 380px;
+        width: 100%;
+      }
+
+      .splash-card h1 {
+        margin: 0 0 10px;
+        font-size: 2rem;
+        color: #f5f3f8;
+        font-family: 'Bree Serif', serif, Arial;
+        letter-spacing: 0.04em;
+      }
+
+      .splash-tagline {
+        margin: 0 0 20px;
+        font-size: 0.85rem;
+        color: #aaa8b5;
+      }
+
+      .splash-graphic {
+        display: block;
+        margin: 0 auto 24px;
+        max-height: 120px;
+        width: auto;
+        border-radius: 8px;
+        image-rendering: pixelated;
+      }
+
+      .enter-btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background-color: #696772;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        border-radius: 8px;
+        border: 2px solid #85838f;
+        transition: transform 0.15s ease, background-color 0.15s ease;
+      }
+
+      .enter-btn:hover {
+        background-color: #ff9cad;
+        color: #292832;
+        border-color: #ff9cad;
+        transform: translateY(-2px);
+      }
+
+      .splash-warning {
+        margin-top: 18px;
+        margin-bottom: 0;
+        font-size: 0.72rem;
+        color: #85838f;
+      }
+    </style>
   </head>
-  
   <body>
-    <header class="reet">
-      <div class="header-ribbon">
-        <div class="header-art-wrapper">
-          <img src="banner7.jpg" alt="Site Header" class="popout-banner-img">
-        </div>
-      </div>
-      <h1 class="banner-title">reet.org</h1>
-    </header>
-    <div class="marquee-bar" role="region" aria-label="Site updates">
-          <div class="marquee-track">
-            <div class="marquee-content">
-              <span class="marquee-divider" aria-hidden="true">✦</span>
-              <span class="marquee-item">welcome to reet.org — feel free to look around!</span>
-              <span class="marquee-divider" aria-hidden="true">✦</span>
-              <span class="marquee-item">this website is hosted on neocities. also, this website is being showcased for the hackclub crescent!</span>
-              <span class="marquee-divider">✦</span>
-              <span class="marquee-item">welcome to reet.org — feel free to look around!</span>
-              <span class="marquee-divider">✦</span>
-            </div>
-          </div>
-    </div>
-    <main class="page-layout">
-      <aside class="sidebar">
-        <section class="about-me">
-        <nav class="side-nav social-nav" aria-label="Find me online">
-          <h2>find me online</h2>
-          <a href="https://www.instagram.com/bloodlluxe/" target="_blank" rel="noopener noreferrer">
-            Instagram
-          </a>
-          <a href="https://x.com/reet4m" target="_blank" rel="noopener noreferrer">
-            Twitter / X
-          </a>
-          <a href="https://open.spotify.com/user/31np6dvu2vmd3aywca5xj6w6wika?si=43d6aa7183b84092" target="_blank" rel="noopener noreferrer">
-            Spotify
-          </a>
-        </nav>
-      </section>
 
-        <nav class="side-nav" aria-label="Page sections">
-          <h2>on this page</h2>
-          <a href="#about">About me</a>
-          <a href="#likes">Things I love</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        
-        <section class="currently-card">
-          <h2 class="currently-heading">lately into</h2>
-        
-          <div class="currently-content">
-        
-            <ul class="currently-list">
-              <li>
-                <span class="currently-label">LISTENING</span>
-                <a href="https://open.spotify.com/album/4T7qu6MdxoGjzZPErRWgsO?si=JT7WFqhUQHCXjR1uBcXirQ">HALO</a>
-              </li>
-              <li>
-                <span class="currently-label">PLAYING</span>
-                <span>Catherine Classic</span>
-              </li>
-            </ul>
-        
-            <p class="currently-footer">little updates from my corner of the web</p>
-          </div>
-        </section>
-      </aside>
+    <main class="splash-card">
+      <h1>reet.org</h1>
+      <p class="splash-tagline">a personal corner on the web ✦</p>
 
-      <div class="main-column">
-        <article class="foreground-panel">
-          <div class="panel-heading">announcements</div>
-          <div class="panel-content">
-            <section id="about">
-               <div class="about-intro">
-                 <p></p>
-               </div>
-            </section>
-          </div>
-          <div class="panel-heading">welcome to my website!</div>
-          <div class="panel-content">
-            <section id="about">
-               <div class="about-intro">
-                 <img class="about-profile-picture" src="pfp.jpg" alt="reets pfp">
-                 <p>hi, i'm reet and i'm currently a high school student who's into tech stuff. i'm still working on this website as i want it to be all about myself, and i hope i'll be able to make it better than it ever could be!</p>
-               </div>
-               <div class="about-facts">
-                 <p><strong>PRONOUNS</strong><span>he/him</span></p>
-                 <p><strong>LEARNING</strong><span>Python</span></p>
-               </div>
-               <p>thanks for stopping by at my page, have fun!</p>
-            </section>
+      <img src="pfp.jpg" alt="reet graphic" class="splash-graphic">
 
-            <hr>
-            
-            <div>
-              <section id="likes">
-                <h2>Things I Love</h2>
-                <ul>
-                  <li>music and books</li>
-                  <li>cats</li>
-                  <li>coding</li>
-                  <li>video games</li>
-                  <li>my guitar</li>
-                </ul>
-              </section>
-            </div>
-          </div>
-        </article>
+      <a href="home.html" class="enter-btn">[ enter site ]</a>
 
-        <section class="updates-panel" id="updates" aria-labelledby="updates-heading">
-          <h2 class="updates-heading" id="updates-heading">site updates</h2>
-          <div class="updates-list" style="max-height: 180px; overflow-y: auto; padding-right: 8px;">
-            <article class="update-post">
-              <div class="update-date">
-              <span aria-hidden="true">★</span>
-                <time datetime="2026-10-31">10/31/2026</time>
-              </div>
-              <p>removed the Last.fm account link. added the "leave a message" section</p>
-            </article>
-            <article class="update-post">
-              <div class="update-date">
-              <span aria-hidden="true">★</span>
-                <time datetime="2026-10-17">10/17/2026</time>
-              </div>
-              <p>added a cool marquee connected to my Last.fm account.</p>
-            </article>
-            <article class="update-post">
-              <div class="update-date">
-                <span aria-hidden="true">★</span>
-                <time datetime="2026-10-15">10/15/2026</time>
-              </div>
-              <p>hi! i'm still working on this site, so check back soon for more updates.</p>
-            </article>
-          </div>
-          <div class="updates-footer">
-            <a class="neocities-follow" href="https://neocities.org/site/reett" target="_blank" rel="noopener noreferrer">
-              follow me on neocities!
-            </a>
-          </div>
-        </section>
-      </div>
+      <p class="splash-warning">best viewed on desktop / best with sound</p>
     </main>
-    <script>
-      const LASTFM_USER = "reetxd";
-      const LASTFM_API_KEY = "6c6807830d624ebc4da564029efcc4c7";
-      const tickerElement = document.getElementById("lastfm-ticker");
-      const tickerLabel = document.getElementById("lastfm-label");
-      const tickerCopy = document.getElementById("lastfm-status-copy");
-      const tickerLabelCopy = document.getElementById("lastfm-label-copy");
-    
-      function loadLastFmData() {
-        return new Promise((resolve, reject) => {
-          const callbackName = `lastFmCallback${Date.now()}${Math.random().toString(36).slice(2)}`;
-          const parameters = new URLSearchParams({
-            method: "user.getrecenttracks",
-            user: LASTFM_USER,
-            api_key: LASTFM_API_KEY,
-            format: "json",
-            callback: callbackName,
-            limit: "1"
-          });
-          const script = document.createElement("script");
-          let timeoutId;
 
-          const cleanup = () => {
-            window.clearTimeout(timeoutId);
-            delete window[callbackName];
-            script.remove();
-          };
-
-          window[callbackName] = (data) => {
-            cleanup();
-            resolve(data);
-          };
-          script.onerror = () => {
-            cleanup();
-            reject(new Error("Last.fm JSONP request failed to load"));
-          };
-          timeoutId = window.setTimeout(() => {
-            cleanup();
-            reject(new Error("Last.fm JSONP request timed out"));
-          }, 10000);
-          script.src = `https://ws.audioscrobbler.com/2.0/?${parameters}`;
-          document.head.appendChild(script);
-        });
-      }
-
-      async function fetchNowPlaying() {
-        try {
-          const data = await loadLastFmData();
-          if (data.error) {
-            throw new Error(`Last.fm API error: ${data.message || data.error}`);
-          }
-
-          const tracks = data.recenttracks?.track;
-          const track = Array.isArray(tracks) ? tracks[0] : tracks;
-          if (!track) {
-            tickerLabel.textContent = "LAST.FM";
-            tickerElement.textContent = "no recent tracks found";
-            tickerElement.removeAttribute("href");
-            tickerLabelCopy.textContent = tickerLabel.textContent;
-            tickerCopy.textContent = tickerElement.textContent;
-            return;
-          }
-
-          const isNowPlaying = track["@attr"]?.nowplaying === "true";
-          const artistName = typeof track.artist === "string"
-            ? track.artist
-            : track.artist?.["#text"];
-          const songName = track.name || "untitled track";
-
-          tickerLabel.textContent = isNowPlaying ? "NOW PLAYING" : "LAST PLAYED";
-          tickerElement.textContent = artistName ? `${songName} — ${artistName}` : songName;
-          if (track.url) {
-            tickerElement.href = track.url;
-          } else {
-            tickerElement.removeAttribute("href");
-          }
-          tickerLabelCopy.textContent = tickerLabel.textContent;
-          tickerCopy.textContent = tickerElement.textContent;
-        } catch (error) {
-          console.error("Unable to fetch Last.fm listening status:", error);
-          tickerLabel.textContent = "LAST.FM";
-          tickerElement.textContent = "listening status unavailable";
-          tickerElement.removeAttribute("href");
-          tickerLabelCopy.textContent = tickerLabel.textContent;
-          tickerCopy.textContent = tickerElement.textContent;
-        }
-      }
-    
-      fetchNowPlaying();
-      setInterval(fetchNowPlaying, 60000);
-    </script>
   </body>
 </html>
